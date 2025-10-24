@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOMI – Créez du lien avec vos voisins</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon-loomi.svg">
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION PRINCIPALE -->
+<nav class="navbar">
+
+  <!-- Partie gauche : logo -->
+  <div class="zone-gauche">
+    <img src="assets/images/logo.svg" alt="Logo du site" class="logo">
+  </div>
+
+    <!-- Partie centrale : catégories  -->
+  <div class="zone-centre">
+    <a href="#rencontre" class="categorie">Rencontre 1-to-1</a>
+    <a href="#evenement" class="categorie">Événements locaux</a>
+    <a href="#petites-annonces" class="categorie">Petites annonces</a>
+  </div>
+
+  <!-- Partie droite : boutons -->
+  <div class="zone-droite">
+
+    <!-- Bouton profil (visible desktop -->
+    <button class="bouton-rond bouton-profil" id="bouton-profil"><img src="assets/images/user.svg"alt="Icône profil" width="24" height="24"> </button>
+
+    <!-- Bouton paramètres (visile desktop) -->
+    <button class="bouton-rond bouton-parametres" id="bouton-parametres">
+      <img src="assets/images/sliders.svg"alt="Icône paramètres" width="24" height="24"> 
+    </button>
+
+    
+
+    
+
+    <!-- Bouton menu burger (visible téléphone) -->
+    <button class="bouton-burger" id="bouton-burger">☰</button>
+  </div>
+
+  <!-- Menu mobile (caché sur desktop) -->
+  <div class="menu-mobile" id="menu-mobile">
+    
+    <button class="element-menu">
+      <img src="assets/images/user.svg"alt="Icône profil" width="24" height="24">Accéder à ton profil
+    </button>
+
+    <button class="element-menu">
+      <img src="assets/images/sliders.svg"alt="Icône profil" width="24" height="24">Paramètres
+    </button>
+
+    <button class="element-menu">
+      <img src="assets/images/send.svg"alt="Icône profil" width="24" height="24">Messagerie
+    </button>
+
+
+
+
+    <a href="#rencontre" class="element-menu">Rencontre 1-to-1</a>
+    <a href="#evenement" class="element-menu">Événements locaux</a>
+    <a href="#petites-annonces" class="element-menu">Petites annonces</a>
+
+
+
+  </div>
+</nav>
+
+<!-- Bouton message  flottant-->
+    <button class="bouton-rond bouton-message" id="bouton-message">
+      <img src="assets/images/send.svg"alt="Icône message" width="24" height="24"> 
+    </button>
+
+<!-- SECTION HERO -->
+
+<section class="hero">
+  <div class="hero-contenu">
+
+    
+    <h1 class="hero-titre">Faites connaissance avec vos voisins près de chez vous</h1>
+
+    
+    <p class="hero-paragraphe">
+      LOOMI vous aide à créer des liens dans votre quartier, participer à des événements locaux 
+      et découvrir ce que vos voisins partagent. Tout cela à moins d’un kilomètre de chez vous.
+    </p>
+
+   
+    <a href="#inscription" class="hero-bouton">Créer un compte</a>
+
+    <!-- Verbatim utilisateur -->
+    <div class="hero-verbatim">
+      <p class="verbatim-texte">
+        "Grâce à LOOMI, j’ai rencontré mes voisins et participé à mon premier café partagé dans l’immeuble. C’est simple et convivial !" 
+      </p>
+      <p class="verbatim-auteur">— Claire, 32 ans, Lyon</p>
+    </div>
+  </div>
+
+  <!-- Illustration / image à droite sur desktop -->
+  <div class="hero-images">
+    <img src="assets/images/image-hero-peinture.jpg" alt="Voisins autour d’un café" class="photo-hero">
+    <img src="assets/images/image-hero-party.jpg" alt="Fête de quartier" class="photo-hero">
+    <img src="assets/images/image-hero-shopping.jpg" alt="Atelier partagé" class="photo-hero">
+  </div>
+</section>
+
+
+
+
+<!-- SECTION CATEGORIES-->
+
+<section id="rencontre">
+
+  <div class="rencontre-container">
+   
+    <div class="section-header">
+      <h2>Rencontre 1-to-1</h2>
+      <p>Rencontrez vos voisins dans votre quartier pour partager un café, une balade ou simplement faire connaissance. Créez plus de liens autour de vous !</p>
+    </div>
+
+    <!-- Cartes profils -->
+    <div class="liste-profils">
+      <div class="profil-card">
+        <img src="assets/images/profil-1.jpg" alt="Claire, 28 ans">
+        <div class="infos-profil">
+          <span class="nom">Claire, 28 ans</span>
+          <span class="action">"Qui pour une expo?"</span>
+        </div>
+      </div>
+      <div class="profil-card">
+        <img src="assets/images/profil-2.jpg" alt="Ahmed, 35 ans">
+        <div class="infos-profil">
+          <span class="nom">Ahmed, 35 ans</span>
+          <span class="action">"Quelqu'un dispo pour faire un footing?"</span>
+        </div>
+      </div>
+      <div class="profil-card">
+        <img src="assets/images/profil-3.jpg" alt="Sophie, 42 ans">
+        <div class="infos-profil">
+          <span class="nom">Sophie, 62 ans</span>
+          <span class="action">"Un petit thé dans mon jardin?"</span>
+        </div>
+      </div>
+      <div class="profil-card">
+        <img src="assets/images/profil-4.jpg" alt="Lucas, 30 ans">
+        <div class="infos-profil">
+          <span class="nom">Lucas, 30 ans</span>
+          <span class="action">"Hello, quelqu'un pour un café dehors ?"</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bouton "Découvrir plus de profil"" -->
+    <div class="section-cta">
+      <button class="bouton-cta">Découvrir plus de profils</button>
+    </div>
+  </div>
+ 
+    
+</section>
+
+<section id="evenement">
+  <div class="container">
+   
+    <div class="section-header">
+      <h2>Événements locaux</h2>
+      <p>Participez ou créez des événements dans votre quartier : ateliers cuisine, apéros conviviaux, ateliers peinture… il y a toujours quelque chose à partager !</p>
+    </div>
+
+    <!-- Liste des cartes événements -->
+    <div class="liste-evenements">
+      <div class="event-card">
+        <img src="assets/images/photo-cuisine.jpg" alt="Atelier cuisine">
+        <div class="event-info">
+          <h3>Atelier cuisine</h3>
+          <span class="date">Samedi 28 octobre</span>
+          <p>Venez cuisiner ensemble et partager vos recettes favorites !</p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="assets/images/photo-apero.jpg" alt="Apéro convivial">
+        <div class="event-info">
+          <h3>Apéro convivial</h3>
+          <span class="date">Vendredi 3 novembre</span>
+          <p>Rencontrez vos voisins autour d’un verre et d’échanges sympathiques.</p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="assets/images/photo-peinture.jpg" alt="Atelier peinture">
+        <div class="event-info">
+          <h3>Atelier peinture</h3>
+          <span class="date">Mercredi 15 novembre</span>
+          <p>Exprimez votre créativité et partagez vos œuvres avec les voisins.</p>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="assets/images/photo-jardinnage.jpg" alt="Atelier jardinage">
+        <div class="event-info">
+          <h3>Atelier jardinage</h3>
+          <span class="date">Dimanche 19 novembre</span>
+          <p>Apprenez à jardiner ensemble et embellissez votre quartier !</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Bouton Créer ou rejoindre un évent -->
+    <div class="section-cta">
+      <button class="bouton-cta">Créer ou rejoindre un événement</button>
+    </div>
+  </div>
+</section>
+
+<section id="petites-annonces">
+  <div class="container">
+    
+    <div class="section-header">
+      <h2>Petites annonces</h2>
+      <p>Échangez services, conseils ou objets avec vos voisins : bricolage, dons d’objets, prêt de matériel… Faites circuler l’entraide dans votre quartier !</p>
+    </div>
+
+    <!-- Liste des annonces -->
+    <div class="liste-annonces">
+      <!-- Carte annonce type verbatim -->
+      <div class="annonce-verbatim">
+        <img class="photo-voisin" src="assets/images/annonce-bricolage.jpg" alt="Marie">
+        <div class="texte-annonce">
+          <span class="nom-voisin">Pierre, 32 ans</span>
+          <p>"Je propose de vous aider pour des petits travaux de bricolage ou monter vos meubles !"</p>
+        </div>
+      </div>
+
+      <div class="annonce-verbatim">
+        <img class="photo-voisin" src="assets/images/annonce-don.jpg" alt="Ahmed">
+        <div class="texte-annonce">
+          <span class="nom-voisin">Ahmed, 41 ans</span>
+          <p>"Je donne des livres et jouets pour enfants, n’hésitez pas à venir les récupérer !"</p>
+        </div>
+      </div>
+
+      <div class="annonce-verbatim">
+        <img class="photo-voisin" src="assets/images/annonce-outils.jpg" alt="Sophie">
+        <div class="texte-annonce">
+          <span class="nom-voisin">Sophie, 29 ans</span>
+          <p>"Je peux prêter des outils pour le jardinage ou le bricolage à mes voisins."</p>
+        </div>
+      </div>
+
+      <div class="annonce-verbatim">
+        <img class="photo-voisin" src="assets/images/annonce-jardinnage.jpg" alt="Lucas">
+        <div class="texte-annonce">
+          <span class="nom-voisin">Lucas, 36 ans</span>
+          <p>"Je propose des conseils et un coup de main pour entretenir votre jardin !"</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bouton "Proposer/consulter annonce " -->
+    <div class="section-cta">
+      <button class="bouton-cta">Proposer ou consulter une annonce</button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SIDEBAR MESSAGERIE -->
+<div id="sidebar-message" class="sidebar-message">
+  
+  <!-- Entête sidebar -->
+  <div class="sidebar-entete">
+    <h3>Messagerie</h3>
+    <h4 class="discussions-recentes-entete">discussions récentes (2)</h4>
+    <!-- Bouton pour fermer la sidebar -->
+    <button id="fermer-sidebar" class="bouton-fermer-sidebar" aria-label="Fermer la messagerie">✖</button>
+  </div>
+
+  <!-- Liste des conversations récentes -->
+  <div class="liste-conversations">
+    <div class="conversation">
+      <img src="assets/images/profil-1.jpg" alt="Marie">
+      <span class="nom-voisin">Marie</span>
+    </div>
+    <div class="conversation">
+      <img src="assets/images/profil-2.jpg" alt="Ahmed">
+      <span class="nom-voisin">Ahmed</span>
+    </div>
+  </div>
+
+  <!-- Zone pour écrire un nouveau message -->
+  <div class="zone-nouveau-message">
+    <textarea placeholder="Écrire un message..."></textarea>
+    <button class="bouton-envoyer-message">Envoyer</button>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div class="container-footer">
+    <!-- Logo et slogan -->
+    <div class="footer-logo">
+      <img src="assets/images/logo.svg" alt="LOOMI">
+      <span class="footer-slogan">Créez du lien avec vos voisins</span>
+    </div>
+
+    
+
+    
+
+    <!-- Réseaux sociaux -->
+    <div class="footer-social">
+      <a href="#"><img src="assets/images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="assets/images/twitch.svg" alt="Twitch"></a>
+      <a href="#"><img src="assets/images/instagram.svg" alt="Instagram"></a>
+    </div>
+
+    
+    <div class="footer-copy">
+      <span>&copy; 2025 LOOMI. Presque tous les droits réservés.</span>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
